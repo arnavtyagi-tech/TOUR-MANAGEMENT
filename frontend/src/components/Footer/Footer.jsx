@@ -33,10 +33,10 @@ const quick__links2 = [
     path: "/register",
     display: "Register",
   },
-]; 
+];
 
 const Footer = () => {
-  
+
   const year = new Date().getFullYear();
 
   return <footer className="footer">
@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="logo">
             <img src={logo} alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div className="social__links d-flex align-items-center gap-4">
               <span>
@@ -62,10 +62,10 @@ const Footer = () => {
                 <a href to='#'><i class="ri-instagram-line"></i></a>
               </span>
             </div>
-            </div>
+          </div>
         </Col>
         <Col lg='3'>
-          <h5 
+          <h5
             className='footer__link-title'>Discover
           </h5>
           <ListGroup className='footer__quick-links'>
@@ -79,7 +79,7 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col lg='3'>
-         <h5 
+          <h5
             className='footer__link-title'>Quick Links
           </h5>
           <ListGroup className='footer__quick-links'>
@@ -93,57 +93,57 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col lg='3'>
-          <h5 
+          <h5
             className='footer__link-title'>Contact
           </h5>
           <ListGroup className='footer__quick-links'>
-    
-                <ListGroupItem  className='ps-0 border-0 d-flex align-items-center gap-3'>
-                  
-                <h6 className='mb-0 d-flex align-items-center gap-2'>
-                  <span>
-                    <i class="ri-map-pin-line"></i>
-                      Address:
-                  </span>
-                </h6>
 
-                <p className='mb-0'> Rajpura, Punjab</p>
+            <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
 
-            </ListGroupItem>
-            <ListGroupItem  className='ps-0 border-0 d-flex align-items-center gap-3'>
-                  
-                <h6 className='mb-0 d-flex align-items-center gap-2'>
-                  <span>
-                    <i class="ri-mail-line"></i>
-                      Email:
-                  </span>
-                </h6>
+              <h6 className='mb-0 d-flex align-items-center gap-2'>
+                <span>
+                  <i class="ri-map-pin-line"></i>
+                  Address:
+                </span>
+              </h6>
 
-                <p className='mb-0'> travelInnovators01@gmail.com</p>
+              <p className='mb-0'> Rajpura, Punjab</p>
 
             </ListGroupItem>
-            <ListGroupItem  className='ps-0 border-0 d-flex align-items-center gap-3'>
-                  
-                <h6 className='mb-0 d-flex align-items-center gap-2'>
-                  <span>
-                    <i class="ri-phone-fill"></i>
-                    Phone:
-                  </span>
-                </h6>
+            <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
 
-                <p className='mb-0'>+91 9876543786</p>
+              <h6 className='mb-0 d-flex align-items-center gap-2'>
+                <span>
+                  <i class="ri-mail-line"></i>
+                  Email:
+                </span>
+              </h6>
+
+              <p className='mb-0'> travelInnovators01@gmail.com</p>
+
+            </ListGroupItem>
+            <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
+
+              <h6 className='mb-0 d-flex align-items-center gap-2'>
+                <span>
+                  <i class="ri-phone-fill"></i>
+                  Phone:
+                </span>
+              </h6>
+
+              <p className='mb-0'>+91 9876543786</p>
 
             </ListGroupItem>
 
-            
+
           </ListGroup>
         </Col>
         <Col lg='12' className="text-center pt-5">
-          <p className='copyright'>Copyright { year }, design and develop by Prerna_Priya. All rights reserved. </p>
+          <p className='copyright'>Copyright {year}, design and develop by Arnav_Tyagi & Anshika_Singh. All rights reserved. </p>
         </Col>
       </Row>
     </Container>
   </footer>
 };
- 
+
 export default Footer;
