@@ -139,7 +139,7 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col lg='12' className="text-center pt-5">
-          <p className='copyright'>Copyright {year}, design and develop by Arnav_Tyagi & Anshika_Singh. All rights reserved. </p>
+          <p className='copyright'>Copyright {year}, design and develop by Prerna Sharma & Priya Chaurasia. All rights reserved. </p>
         </Col>
       </Row>
     </Container>
