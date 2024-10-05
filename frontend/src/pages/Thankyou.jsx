@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,Row,Col,Button} from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import {Link} from "react-router-dom";
 import '../styles/thank-you.css';
 const Thankyou = () => {
@@ -12,7 +12,7 @@ const Thankyou = () => {
                             <span><i class="ri-checkbox-circle-line"></i></span>
                             <h1 className='mb-3 fw-semibold'>Thank You</h1>
                             <h3 className='mb-4'>your tour is booked.</h3>
-                            <Button className="btn primary__btn w-25"><Link to="/home">Back to Home</Link></Button>
+                            <Link to="/home" className="btn primary__btn w-25">Back to Home</Link>
                         </div>
                 </Col>
             </Row>
@@ -23,4 +23,4 @@ const Thankyou = () => {
   )
 }
 
-export default Thankyou
+export default Thankyou;
