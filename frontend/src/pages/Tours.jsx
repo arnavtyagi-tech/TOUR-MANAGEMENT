@@ -46,7 +46,7 @@ const Tours = () => {
           {
             !loading && !error && <Row>
             {
-              tourData?.map
+              tours?.map
                 (tour => <Col lg='3' key={tour._id}>
                 <TourCard tour={tour} />
               </Col>
