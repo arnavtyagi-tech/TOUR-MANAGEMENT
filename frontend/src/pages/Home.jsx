@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/home.css'
 import { Container, Row, Col } from 'reactstrap';
 import heroImg from '../assets/images/hero-img01.jpg'
@@ -13,11 +13,16 @@ import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 import MasonaryImagesGallery from '../components/Image-gallery/MasonaryImagesGallery';
 import Testimonials from '../components/Testimonial/Testimonials';
 import Newsletter from '../shared/Newsletter';
-
+import chatbotIcon from '../assets/images/imageLogo.png'; 
 
 const Home = () => {
+  const [showChatbot, setShowChatbot] = useState(false);
+
+  const toggleChatbot = () => {
+    setShowChatbot(!showChatbot);
+  };
+
   return (
-    //  hero section start
     <>
       <section>
         <Container>
@@ -51,7 +56,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* // hero section end */}
+
       <section>
         <Container>
           <Row>
@@ -64,7 +69,6 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* Feature Tour section start */}
       <section>
         <Container>
           <Row>
@@ -78,9 +82,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* Feature Tour section end */}
 
-      {/* experience section start */}
       <section>
         <Container>
           <Row>
@@ -119,9 +121,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* experience section end */}
 
-      {/* gallery section starts */}
       <section>
         <Container>
           <Row>
@@ -137,9 +137,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* gallery section ends */}
 
-      {/* testimonial section start */}
       <section>
         <Container>
           <Row>
@@ -155,8 +153,45 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* testimonial section end */}
+
       <Newsletter />
+
+     {/* Chatbot Button */}
+      <button
+        onClick={toggleChatbot}
+        style={{
+          position: 'fixed',
+          bottom: '40px',
+          right: '30px',
+          height: '100px',  
+          width: '100px',   
+          backgroundColor: 'transparent', 
+          border: 'none',
+          cursor: 'pointer',
+          zIndex: '1000',
+        }}
+      >
+        <img src={chatbotIcon} alt="Chatbot" style={{ width: '100px', height: '100px' }} />
+      </button>
+
+
+
+      {/* Chatbot iframe */}
+      {showChatbot && (
+        <iframe
+          src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/11/06/07/20241106074931-UNAUTUH4.json"
+          style={{
+            position: 'fixed',
+            bottom: '90px',
+            right: '20px',
+            width: '350px',
+            height: '500px',
+            border: 'none',
+            zIndex: '1000',
+          }}
+          title="Chatbot"
+        ></iframe>
+      )}
     </>
   );
 };
